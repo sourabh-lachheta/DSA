@@ -1,4 +1,4 @@
-package com.Searching.BinearySearch;
+package com.Searching.BinarySearch;
 
 public class Main {
 
