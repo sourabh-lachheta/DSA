@@ -1,7 +1,8 @@
+
+// LeetCode 278 = Find Bad Version
+
+
 package com.Problems;
-
-
-
 
 public class BadVersion_278 {
 
