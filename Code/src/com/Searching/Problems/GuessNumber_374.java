@@ -4,7 +4,7 @@
 
 
 
-package com.Problems;
+package com.Searching.Problems;
 
 public class GuessNumber_374 {
 

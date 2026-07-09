@@ -2,7 +2,7 @@
 
 // LeetCode 167 =  Two Sum II - Input Array Is Sorted
 
-package com.Problems;
+package com.Searching.Problems;
 import java.util.Arrays;
 public class TwoSum_167 {
     public static int[] twoSum(int[] numbers, int target) {

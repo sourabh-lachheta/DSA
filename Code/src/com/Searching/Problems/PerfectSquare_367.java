@@ -2,7 +2,7 @@
 
 // LeetCode 367:  Valid Perfect Square
 
-package com.Problems;
+package com.Searching.Problems;
 public class PerfectSquare_367 {
 
     public static boolean isPerfectSquare(int num) {

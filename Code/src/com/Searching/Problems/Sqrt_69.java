@@ -2,7 +2,7 @@
 // LeetCode = 69 sqrt(x)
 
 
-package com.Problems;
+package com.Searching.Problems;
 
 public class Sqrt_69 {
     static class Solution{
