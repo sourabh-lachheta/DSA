@@ -1,7 +1,11 @@
+
+
+// LeetCode 905: sort array parity
+
+
 package com.Sorting.Problems;
 
 import java.util.Arrays;
-
 public class SortArrayParity_905 {
 
     public static int[] sortArrayByParity(int[] nums) {
@@ -16,8 +20,6 @@ public class SortArrayParity_905 {
         }
         return nums;
     }
-
-
     public static void main(String[] args){
         int[] nums = {3,1,5,4,2};
         System.out.println(Arrays.toString(sortArrayByParity(nums)));
