@@ -1,33 +1,36 @@
 package com.RoughWork;
 import java.util.*;
 public class Main {
-    public static void main(String[] args){
-        int low = 1000;
-        int high = 13000;
-        ArrayList<Integer> l = new ArrayList<>();
-        int  n = 11;
-        int ans = 12;
-        int temp =100;
-        int temp1 = 12;
-       while(ans < 1200){
-            ans = ans + n;
-           int a = ans%10;
-           if(ans >= low && ans <= high) {
-               l.add(ans);
-           }
-           if(a == 9){
-             //  int temp = 100;
-               n = n + temp;
-               ans = temp1 + n;
-               if(ans >= low && ans <= high) {
-                   l.add(ans);
-               }
-               temp1 = ans;
-               temp = temp*10;
-           }
-       }
 
-        System.out.println(l);
+    static int sort(int[] nums, int val){
+       // Arrays.sort(nums);
+        int n = nums.length;
+        int k = 0;
+        for(int i = nums.length-1; i >=0; i--){
+            System.out.println("outer loop : " + Arrays.toString(nums));
+            for(int j = i - 1; j >=0; j--){
+                if(nums[j] == val){
+                    int temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
+            }
+        }
+        for(int i = nums.length-1; i >=0; i--){
+            if(nums[i] == 2){
+                k++;
+            }else{
+                n = n - k;
+                return n;
+            }
+        }
+        return -1;
+
+    }
+    public static void main(String[] args){
+       int[] nums= {3,2,2,3};
+
+        System.out.println(sort(nums,3));
 
     }
 }
