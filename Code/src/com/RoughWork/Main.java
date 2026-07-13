@@ -1,31 +1,33 @@
 package com.RoughWork;
-
+import java.util.*;
 public class Main {
-    static class Solution {
-        public static int removeCoveredIntervals(int[][] intervals) {
-            int i = 0;
-            int l = intervals.length;
-            while(i < intervals.length - 1) {
-                int n = 0;
-                while (n <= 1) {
-                    //System.out.println(l);
-                    if (intervals[i][n] >= intervals[i + 1][n] && intervals[i][n + 1] <= intervals[i + 1][n + 1]) {
-                        l--;
-                    }
-                    n++;
-                }
-                i++;
-            }
-            return l;
-
-        }
-    }
-
-
     public static void main(String[] args){
-        int[][] arr = {{1,4},{3,6},{2,8}};
-        System.out.println(Solution.removeCoveredIntervals(arr));
+        int low = 1000;
+        int high = 13000;
+        ArrayList<Integer> l = new ArrayList<>();
+        int  n = 11;
+        int ans = 12;
+        int temp =100;
+        int temp1 = 12;
+       while(ans < 1200){
+            ans = ans + n;
+           int a = ans%10;
+           if(ans >= low && ans <= high) {
+               l.add(ans);
+           }
+           if(a == 9){
+             //  int temp = 100;
+               n = n + temp;
+               ans = temp1 + n;
+               if(ans >= low && ans <= high) {
+                   l.add(ans);
+               }
+               temp1 = ans;
+               temp = temp*10;
+           }
+       }
 
+        System.out.println(l);
 
     }
 }
