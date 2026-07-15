@@ -1,6 +1,7 @@
 package com.HashMap;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args){
@@ -9,5 +10,12 @@ public class Main {
         map.put(102,"alex");
         map.put(101,"ss");
         System.out.println(map);
+
+        // iteration
+        for(Map.Entry<Integer,String> e : map.entrySet()){
+            System.out.println(e.getKey() + " " + e.getValue());
+        }
+
+
     }
 }
