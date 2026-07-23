@@ -12,5 +12,6 @@ public class Fibo {
         int n = 10;
         System.out.println( nums(n));
 
+
     }
 }
