@@ -15,6 +15,7 @@ public class PerfectSquare_279 {
             
 
         }
+        return 0;
     }
     public static void main(String[] args){
         int num = 12;
