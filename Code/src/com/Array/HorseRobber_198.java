@@ -5,6 +5,7 @@
 
 package com.Array;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class HorseRobber_198 {
@@ -19,6 +20,9 @@ public class HorseRobber_198 {
     }
     public static void main(String[] args){
         int[] nums = {1,2,3,1};
+        int n = 9;
+        System.out.println( Math.pow(2,2));
+
         System.out.println(rob(nums));
 
     }
