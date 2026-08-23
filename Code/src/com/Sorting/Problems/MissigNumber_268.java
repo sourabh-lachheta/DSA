@@ -3,20 +3,31 @@ package com.Sorting.Problems;
 import java.util.Arrays;
 
 public class MissigNumber_268 {
-    static  int[] missingNumber(int[] nums) {
-        for (int i = 0; i < nums.length; i++){
-            int c = nums[i];
-             if( nums[i] < nums.length && nums[i] != nums[c]){
-                int temp = nums[i];
-                nums[i] = nums[c];
-                nums[c] = temp;;
+    static  int missingNumber(int[] nums) {
+
+        int n = nums.length;
+        int c = 0;
+        while(c < nums.length) {
+            for (int i = 0; i < n-1; i++) {
+                if(nums[i] > nums[i+1]){
+                    int temp = nums[i+1];
+                    nums[i+1] = nums[i];
+                    nums[i] = temp;
+                    System.out.println(Arrays.toString(nums));
+                }
             }
+           if(nums[n-1] == n){
+               n--;
+               c++;
+           }else{
+               return n;
+           }
         }
-        return nums;
+        return -1;
     }
 
     public static void main(String[] args){
-        int[] nums = {3,0,1};
-        System.out.println(Arrays.toString(nums));
+        int[] nums = {9,6,4,2,3,5,7,0,1};
+        System.out.println(missingNumber(nums));
     }
 }
