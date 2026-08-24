@@ -3,7 +3,7 @@
 // LeetCode 905: sort array parity
 
 
-package com.Sorting.Problems;
+package com.sorting.Problems;
 
 import java.util.Arrays;
 public class SortArrayParity_905 {

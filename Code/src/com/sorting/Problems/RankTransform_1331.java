@@ -2,10 +2,9 @@
 
 // LeetCode 1331
 
-package com.Sorting.Problems;
+package com.sorting.Problems;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 public class RankTransform_1331 {
 

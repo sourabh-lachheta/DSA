@@ -2,7 +2,7 @@
 
 // LeetCode 75: sort Color (using selection sort)
 
-package com.Sorting.Problems;
+package com.sorting.Problems;
 
 import java.util.Arrays;
 public class SortColor_75 {

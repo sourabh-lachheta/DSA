@@ -1,4 +1,4 @@
-package com.Sorting.CycleSort;
+package com.sorting.CycleSort;
 
 import java.util.Arrays;
 public class Main {

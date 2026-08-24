@@ -2,7 +2,7 @@
 
 // LeetCode 912 : sort array (using bubble sort for practice)
 
-package com.Sorting.Problems;
+package com.sorting.Problems;
 
 import java.util.Arrays;
 public class SortArray_912 {

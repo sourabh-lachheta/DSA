@@ -3,7 +3,7 @@
 // LeetCode 1051: height Checker
 
 
-package com.Sorting.Problems;
+package com.sorting.Problems;
 
 public class HeightChecker_1051 {
     public static int heightChecker(int[] heights) {
