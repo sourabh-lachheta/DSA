@@ -2,10 +2,13 @@ package com.RoughWork;
 
 public class roughString {
     public static void main(String[] args){
-        String[] str = {"eat", "ttt", "sss"};
-        int n = 1;
-        for(int i =0; i < str[n].length(); i++){
-            System.out.println(str[n].charAt(i));
-        }
+        String s = "sourabh";
+        int mid = s.length()/2;
+        String prefix = s.substring(0, mid);
+        String suffix = s.substring(mid + 1);
+
+        
+        System.out.println(prefix);
+        System.out.println(suffix);
     }
 }
