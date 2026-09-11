@@ -5,7 +5,7 @@ import java.util.LinkedList;
 public class Main {
 
     public static void main(String[] args){
-        LL list = new LL();
+     /*   LL list = new LL();
 
         list.insertAtFirst(4);
         list.insertAtFirst(7);
@@ -30,9 +30,19 @@ public class Main {
         list1.add(3);
         list2.add(5);
         list2.add(6);
-        list2.add(4);
+        list2.add(4);/*/
 
 
-        for(int i = 0; i < )
+        DLL list1 = new DLL();
+        list1.insertAtFirst(6);
+        list1.insertAtFirst(4);
+        list1.insertAtFirst(2);
+        list1.insertAtFirst(3);
+        list1.insertAtFirst(1);
+
+        list1.display();
+
+
+
     }
 }
