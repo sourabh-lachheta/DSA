@@ -16,7 +16,6 @@ This repository contains my solutions to Data Structures and Algorithms problems
 * Dynamic Programming
 * Trees
 * Graphs
-* SQL
 
 ## Problem Sources
 
