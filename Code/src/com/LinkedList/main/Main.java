@@ -32,15 +32,23 @@ public class Main {
         list2.add(6);
         list2.add(4);/*/
 
+//
+//        DLL list1 = new DLL();
+//        list1.insertAtFirst(6);
+//        list1.insertAtFirst(4);
+//        list1.insertAtFirst(2);
+//        list1.insertAtFirst(3);
+//        list1.insertAtFirst(1);
+//
+//        list1.display();
 
-        DLL list1 = new DLL();
-        list1.insertAtFirst(6);
-        list1.insertAtFirst(4);
-        list1.insertAtFirst(2);
-        list1.insertAtFirst(3);
-        list1.insertAtFirst(1);
-
-        list1.display();
+        CLL list2 = new CLL();
+        list2.insert(45);
+        list2.insert(34);
+        list2.insert(23);
+        list2.display();
+        list2.delete(34);
+        list2.display();
 
 
 
