@@ -3,8 +3,9 @@ package com.LinkedList.main;
 public class LL {
 
 
-    private Node head;
-    private Node tail;
+
+    private ListNode head;
+    private ListNode tail;
 
     private int size;
 
@@ -12,10 +13,14 @@ public class LL {
         this.size = 0;
     }
 
+    public ListNode getHead() {
+        return head;
+    }
+
 
     // inset at first
     public void insertAtFirst(int val){
-        Node node = new Node(val);
+        ListNode node = new ListNode(val);
         node.next = head;
         head = node;
 
@@ -32,8 +37,9 @@ public class LL {
 
         if(tail == null){
             insertAtFirst(val);
+            return;
         }
-        Node node =  new Node(val);
+        ListNode node =  new ListNode(val);
         tail.next = node;
         tail = node;
         size++;
@@ -50,12 +56,12 @@ public class LL {
             insertAtLast(val);
         }
 
-        Node temp = head;
+        ListNode temp = head;
         for(int i = 1; i < index; i++){
             temp = temp.next;
         }
 
-        Node node = new Node(val, temp.next);
+        ListNode node = new ListNode(val, temp.next);
         temp.next = node;
         size++;
 
@@ -78,7 +84,7 @@ public class LL {
             deleteAtFirst();
         }
 
-        Node secondLast = get(size - 2);
+        ListNode secondLast = get(size - 2);
         int val = tail.val;
         tail = secondLast;
         tail.next = null;
@@ -88,8 +94,8 @@ public class LL {
 
   }
 
-  public Node get(int index){
-        Node node = head;
+  public ListNode get(int index){
+        ListNode node = head;
         for(int i = 1; i < index; i++){
            node =  node.next;
         }
@@ -106,7 +112,7 @@ public class LL {
             deleteAtLast();
         }
 
-        Node perv = get(index -1);
+        ListNode perv = get(index -1);
         int val = perv.next.val;
 
         perv.next = perv.next.next;
@@ -116,7 +122,7 @@ public class LL {
 
 
     public void display(){
-        Node temp = head;
+        ListNode temp = head;
         while(temp != null){
             System.out.print(temp.val + "-> ");
             temp = temp.next;
@@ -124,15 +130,19 @@ public class LL {
         System.out.println("end");
     }
 
-    private class Node{
-        private int val;
-        private Node next;
+    public static class ListNode{
+        public int val;
+        public ListNode next;
 
-        public Node(int val){
+        public ListNode(){
+
+        }
+
+        public ListNode(int val){
             this.val = val;
         }
 
-        public Node(int val, Node next){
+        public ListNode(int val, ListNode next){
             this.val = val;
             this.next = next;
         }
