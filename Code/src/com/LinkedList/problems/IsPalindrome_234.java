@@ -56,6 +56,21 @@ public class IsPalindrome_234 {
         return prev;
     }
 
+    //reverse with recursion
+    public ListNode reverseListRec(ListNode head) {
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode newHead = reverseListRec(head.next);
+
+        head.next.next = head;
+        head.next = null;
+
+        return newHead;
+    }
+
 
     public class ListNode{
 
