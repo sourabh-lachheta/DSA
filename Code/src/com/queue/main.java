@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         Queue<Integer> queue = new LinkedList<>();
 
         queue.add(5);
@@ -35,6 +35,16 @@ public class main {
 
 
        // System.out.println(q);
+
+        CustomQueue que = new CustomQueue(5);
+
+        que.insert(3);
+        que.insert(7);
+        que.insert(9);
+
+        que.remove();
+
+        que.display();
 
 
 
