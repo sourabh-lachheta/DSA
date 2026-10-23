@@ -76,6 +76,13 @@ public class BinarySearchTree {
         display(node.right, "right child of " + node.getValue() + " : ");
     }
 
+
+    public void populate(int[] nums){
+        for(int i = 0; i <nums.length; i++){
+            this.insert(nums[i]);
+        }
+    }
+
     public boolean balanced(){
         return balanced(root);
     }
