@@ -2,7 +2,12 @@ package com.maths.problem;
 
 public class ExcelSheet_168 {
 
-    
+    public  static String convertToTitle(int columnNumber) {
+
+        return solve(columnNumber);
+
+    }
+
     public static String solve(int columnNumber){
 
         StringBuilder sb = new StringBuilder();
@@ -17,5 +22,10 @@ public class ExcelSheet_168 {
             columnNumber /= 26;
         }
         return sb.toString();
+    }
+
+    public static void main(String[] args){
+        int columnNumber = 1;
+        System.out.println(convertToTitle(columnNumber));
     }
 }
