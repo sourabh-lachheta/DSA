@@ -1,6 +1,6 @@
 package com.String.Problems;
 
-public class Check_A_B {
+public class Check_A_B_2124 {
     public static boolean checkString(String s) {
 
 
